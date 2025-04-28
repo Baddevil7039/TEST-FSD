@@ -1,0 +1,479 @@
+*{
+    margin: 0%;
+    border: 2em;
+    padding: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+div {
+  /* border: solid black;*/
+    padding: 10px;
+}
+
+.logo {
+    grid-column:1/4 ;
+}
+
+.nav {
+    grid-column:4/7 ;
+}
+
+.auth {
+    grid-column:10/13 ;
+}
+
+.auth button{
+    justify-content: center;
+    grid: column 10/13 ;
+}
+
+.hero-description{
+    grid-column: 1/7;
+}
+
+.hero-image {
+    grid-column: 7/13;
+    text-align: center;
+}
+
+.hero-description h1{
+    font-size: 4em;
+}
+
+.hero-description p{
+    font-family: "poppins";
+    font-size: 1.5em;
+}
+
+.hero-description button{
+    font-size: 1.2em;
+}
+
+.nav li{
+    list-style: none;
+    align-content:center;
+    padding: 10px;
+    
+    
+}
+    
+.nav li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 1.5em;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+}
+
+.logo{
+    align-content: center;
+    justify-content: right;
+}
+
+.hero-description span{
+    font-size: .900em;
+}
+
+.logo{
+    padding: 2.5em;
+    margin: auto;
+}
+
+.auth button{
+
+    padding: .400em;
+    justify-content:center;
+    margin:auto;
+}
+
+.hero-description h1{
+    padding: 1em;
+    margin: auto;
+    align-content: center;
+}
+
+.hero-description p{
+    padding-left: 2.5;
+    margin: auto;
+    align-content: center;
+}
+
+.hero-description button{
+    padding-left: .300em;
+    margin: auto;
+}
+
+.login {
+    background-color: white;
+    color: darkorange;
+    border-color: white;
+    border-radius: .5em;
+
+}
+
+.sing {
+    background-color: darkorange;
+    color: white;
+    border-color: darkorange;
+    border-radius: .5em;
+}
+    
+button {
+  background-color: darkorange; 
+  color: white;           
+  border: 2px solid darkorange; 
+}
+
+.search-box{
+    grid-column: 2/6;
+}
+
+.search-box {
+    display: flex;
+    background-color: #fff;
+    padding: .1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    gap: 2.5em;
+    width: 250%;
+    align-items: center;
+  }
+
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+    width: 300%;
+    gap: 1em;
+  }
+
+  .search-item select{
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ffa500;
+    outline: none;
+    font-size:x-small;
+    background: transparent;
+  }
+
+  .search-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .explore-btn{
+    margin: 0%;
+    padding: 1.5em ;
+    width: 350%;
+    height: 9vh ;
+    border-radius: .5em;
+  }
+/*section 2*/
+  .page {
+    grid-column: 3/11;
+    margin: 20%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items:center;
+    justify-content: center;
+  }
+
+
+.menu{
+    grid-column: 1/12;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #f7f9fc;
+  }
+  
+  .menu-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background: url('wave-background.png') no-repeat center center/cover;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  .menu-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Hover Effect */
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+/* ection 3*/
+  .three{
+    grid-column: 3/11;
+    margin: 20%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items:center;
+    justify-content: center;
+  }
+
+  /*.destination-cards{
+    grid-column: 3/11;
+    margin: 20%;
+    display: flex;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items:center;
+    justify-content: center;
+  }*/
+
+/*/section------- 4*/
+  .destination-cards {
+    grid-column: 1/12;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .destination-card {
+    width: 250px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .book-now {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff6b35;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .image-container:hover .book-now {
+    display: block;
+  }
+  
+  .destination-content {
+    padding: 1rem;
+  }
+  
+  .top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .location-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 0.85rem;
+  }
+  
+  .new-price {
+    color: #ff6b35;
+    font-weight: bold;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  /*section 5-------*/
+  .file {
+    grid-column: 3/11;
+    margin: 20%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  /* section 6--------*/
+  .trip-cards {
+    grid-column: 1/12;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .trip-card {
+    width: fit-content;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .trip-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trip-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .trip-content {
+    padding: 1rem;
+  }
+  
+  .trip-title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trip-title-price h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .trip-price {
+    color: #ff6b35;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .trip-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .trip-days, .trip-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  .icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  
+
+
